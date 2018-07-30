@@ -17,7 +17,7 @@ For Part 1 only, you may assume all strings passed to the arena's getting and re
 
 Make a class that inherits from the FighterInterface provided; details about abilities, stats, and more can be found in the FighterInterface
 For Part 2, the test driver WILL NOT call your useAbility() or regenerate() methods, so it is possible to receive credit for Part 2 without these methods being complete
-Completion of Part 1 is required to submit Part 2
+Completion of Part 1 is required to submit Part 2.
 
 3. Part 3 - Reset Testing
 
@@ -27,12 +27,13 @@ This is a more thorough testing of battling and resetting.
 
 Make adding new fighters to your arena robust; this involves rejecting any string that is not of the correct format or that would add a duplicate name to the arena.
 Make getting and removing existing fighters in your arena robust.
-Completion of Part 1 is required to submit Part 3
+(Pro tip: wouldn't it be handy if the Arena class had a private function that took a name and returned the index for the figher, or -1 if not found?)
+Completion of Part 1 is required to submit Part 3.
 
 5. Part 5 - Let Me Show You My True Form...
 
 Add functionality to the useAbility() method and the regenerate() method for each fighter type
-Completion of Parts 1 and 2 is required to submit Part 5
+Completion of Parts 1 and 2 is required to submit Part 5.
 
 ## Requirement Notes
 

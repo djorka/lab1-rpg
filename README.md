@@ -65,11 +65,10 @@ The following class hierarchy diagram shows the expected inheritance relationshi
 ## Rubric
 | Part | Points |
 | --- | --- |
-| Part 1 | 20 |
-| Part 2 | 20 |
-| Part 3 | 20 |
+| Part 1 | 15 |
+| Part 2 | 25 |
+| Part 3 | 10 |
 | Part 4 | 20 |
-| Part 5 | 20 |
+| Part 5 | 30 |
 | --- | --- |
 | Total | 100 |
-| --- | --- |

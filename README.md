@@ -27,7 +27,7 @@ This is a more thorough testing of battling and resetting.
 
 Make adding new fighters to your arena robust; this involves rejecting any string that is not of the correct format or that would add a duplicate name to the arena.
 Make getting and removing existing fighters in your arena robust.
-(Pro tip: wouldn't it be handy if the Arena class had a private function that took a name and returned the index for the figher, or -1 if not found?)
+(Pro tip: Wouldn't it be handy if the Arena class had a private function that took a name as input and returned the index of the fighter with that name, or -1 if not found?)
 Completion of Part 1 is required to submit Part 3.
 
 5. Part 5 - Let Me Show You My True Form...

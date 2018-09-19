@@ -1,5 +1,5 @@
 all:
-	g++ -o fighter main.cpp fighter.cpp cleric.cpp arena.cpp archer.cpp
+	g++ -o fighter main.cpp fighter.cpp cleric.cpp arena.cpp archer.cpp robot.cpp
 
 clean:
 	rm -f fighter

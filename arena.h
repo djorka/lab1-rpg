@@ -11,9 +11,9 @@ class Arena : public ArenaInterface {
     vector <Fighter*> fighters;
   public:
     Arena(){};
-    ~Arena();
-    bool addFighter(string info);
-    bool removeFighter(string name);
+    ~Arena(){};
+    bool addFighter(std::string info);
+    bool removeFighter(std::string name);
     int getSize() const;
-    FighterInterface* getFighter(string name);
+    FighterInterface* getFighter(std::string name);
 };

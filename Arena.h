@@ -10,10 +10,10 @@ class Arena : public ArenaInterface {
   private:
     vector <Fighter*> fighters;
   public:
-    Arena():ArenaInterface(){};
+    Arena(){};
     ~Arena();
     bool addFighter(string info);
     bool removeFighter(string name);
-    virtual int getSize() const;
+    int getSize() const;
     FighterInterface* getFighter(string name);
 };

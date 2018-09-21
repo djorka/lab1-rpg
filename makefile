@@ -1,6 +1,6 @@
 all:
-	g++ -std=c++11 -o rpg main.cpp fighter.cpp cleric.cpp Arena.cpp archer.cpp robot.cpp
+	g++ -std=c++11 -o lab1 main.cpp fighter.cpp cleric.cpp Arena.cpp archer.cpp robot.cpp
 
 clean:
-	rm -f rpg
+	rm -f lab1
 	rm -f out_file*.txt

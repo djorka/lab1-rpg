@@ -2,7 +2,7 @@
 #include "FighterInterface.h"
 using namespace std;
 
-class Fighter : public FighterInterface {
+class Fighter: public FighterInterface {
   protected:
     string name;
     int hitPoints;
@@ -18,17 +18,17 @@ class Fighter : public FighterInterface {
       strength = mystrength;
       speed = myspeed;
       magic = mymagic;
-    }
-    ~Fighter() {}
-    string getName() { return name; }
-    int getMaximumHp() { return maxHitPoints; }
-    int getCurrentHp() { return hitPoints; }
-    int getStrength() { return strength; }
-    int getSpeed() { return speed; }
-    int getMagic() { return magic; }
-    virtual int getDamage() = 0;
+    };
+    ~Fighter() {};
+    string getName() const { return name; }
+    int getMaximumHP() const { return maxHitPoints; }
+    int getCurrentHP() const { return hitPoints; }
+    int getStrength() const { return strength; }
+    int getSpeed() const { return speed; }
+    int getMagic() const { return magic; }
+    int getDamage() = 0;
     virtual void takeDamage(int damage);
     virtual void reset();
     virtual void regenerate();
     virtual bool useAbility() = 0;
-}
+};

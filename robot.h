@@ -7,7 +7,7 @@ class Robot : public Fighter {
     int maxEnergy;
     int bonusDamage;
   public:
-    Robot(string name, int maxHitPoints, int strength, int speed, int magic):Fighter(name, maxHitPoints, strength, speed, magic) {
+    Robot(string myname, int mymaxHitPoints, int mystrength, int myspeed, int mymagic):Fighter(myname, mymaxHitPoints, mystrength, myspeed, mymagic) {
       currentEnergy = magic * 2;
       maxEnergy = currentEnergy;
       bonusDamage = 0;
@@ -17,4 +17,4 @@ class Robot : public Fighter {
     int getDamage();
     void reset();
     bool useAbility();
-}
+};

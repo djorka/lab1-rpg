@@ -1,4 +1,4 @@
-#include "arena.h"
+#include "Arena.h"
 #include <sstream>
 
 bool Arena::addFighter(string info) {
@@ -37,7 +37,7 @@ bool Arena::addFighter(string info) {
 bool Arena::removeFighter(string name) {
 
 }
-int Arena::getSize() {
+int Arena::getSize() const {
 
 }
 FighterInterface* Arena::getFighter(string name) {

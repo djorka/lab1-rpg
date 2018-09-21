@@ -32,6 +32,7 @@ bool Cleric::useAbility() {
     }
     else {
       hitPoints += newHitPoints;
+      return true;
     }
   }
   else {

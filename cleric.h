@@ -6,7 +6,7 @@ class Cleric : public Fighter {
     int currentMana;
     int maxMana;
   public:
-    Cleric(string name, int maxHitPoints, int strength, int speed, int magic):Fighter(name, maxHitPoints, strength, speed, magic) {
+    Cleric(string myname, int mymaxHitPoints, int mystrength, int myspeed, int mymagic):Fighter(myname, mymaxHitPoints, mystrength, myspeed, mymagic) {
       currentMana = magic * 5;
       maxMana = currentMana;
     }
@@ -16,4 +16,4 @@ class Cleric : public Fighter {
     void reset();
     void regenerate();
     bool useAbility();
-}
+};

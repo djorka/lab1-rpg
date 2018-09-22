@@ -9,6 +9,7 @@ using namespace std;
 class Arena : public ArenaInterface {
   private:
     vector <Fighter*> fighters;
+    int getFighterIndex(string name) const;
   public:
     Arena(){};
     ~Arena(){};

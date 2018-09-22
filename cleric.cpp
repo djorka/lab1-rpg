@@ -10,7 +10,7 @@ void Cleric::regenerate() {
   if (newMana < 1) {
     newMana = 1;
   }
-  else if (currentMana == maxMana) {
+  if (currentMana == maxMana) {
     // leave it be
   }
   else if ((currentMana + newMana) > maxMana) {
@@ -22,12 +22,16 @@ void Cleric::regenerate() {
 }
 bool Cleric::useAbility() {
   if (currentMana >= CLERIC_ABILITY_COST) {
-    int newHitPoints = magic / 3;
     currentMana -= CLERIC_ABILITY_COST;
+    if (hitPoints == maxHitPoints) {
+      return true;
+    }
+    int newHitPoints = magic / 3;
+    if (newHitPoints < 1) {
+      newHitPoints = 1;
+    }
     if ((hitPoints + newHitPoints) >= maxHitPoints) {
-      if ((hitPoints + 1) <= maxHitPoints) {
-        hitPoints += 1;
-      }
+      hitPoints = maxHitPoints;
       return true;
     }
     else {

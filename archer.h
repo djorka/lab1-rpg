@@ -2,14 +2,14 @@
 #include "fighter.h"
 
 class Archer : public Fighter {
-  private:
-    int startingSpeed;
+  protected:
+    int originalSpeed;
   public:
     Archer(string myname, int mymaxHitPoints, int mystrength, int myspeed, int mymagic):Fighter(myname, mymaxHitPoints, mystrength, myspeed, mymagic) {
-      startingSpeed = myspeed;
+      originalSpeed = myspeed;
     }
-    ~Archer(){};
-    int getDamage() { return speed; }
+    ~Archer(){}
+    int getDamage() { return this->getSpeed(); }
     void reset();
     bool useAbility();
 };

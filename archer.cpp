@@ -2,7 +2,7 @@
 
 void Archer::reset() {
   Fighter::reset();
-  speed = startingSpeed;
+  speed = originalSpeed;
 }
 bool Archer::useAbility() {
   speed += 1;

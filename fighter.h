@@ -27,8 +27,8 @@ class Fighter: public FighterInterface {
     int getSpeed() const { return speed; }
     int getMagic() const { return magic; }
     int getDamage() = 0;
-    virtual void takeDamage(int damage);
-    virtual void reset();
-    virtual void regenerate();
-    virtual bool useAbility() = 0;
+    void takeDamage(int damage);
+    void reset();
+    void regenerate();
+    bool useAbility() = 0;
 };
